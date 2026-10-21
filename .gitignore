@@ -1,0 +1,11 @@
+build*/
+.vs/
+.vscode/
+__pycache__/
+*.pyc
+*.user
+*.exe
+*.obj
+*.pdb
+*.zip
+results/
