@@ -1,3 +1,3 @@
 # Tests
 
-The core algorithm suite is `test_algorithms.cpp`. Run it through CTest. It uses independent exhaustive oracles and convolution checks, rather than the starter launcher smoke tests. Application integration tests follow with the CLI and viewer.
+Run CTest for `algorithms` and `command_line`. Python 3.10+ is needed for the latter; explicitly select its interpreter when configuring if needed. The algorithm suite uses independent exhaustive oracles; CLI tests independently decode output pixels and replay removals. Viewer tests follow in the next stage.
