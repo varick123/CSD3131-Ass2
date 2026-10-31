@@ -8,4 +8,8 @@ __pycache__/
 *.obj
 *.pdb
 *.zip
-results/
+web/runs/
+results/*
+!results/evaluation/
+!results/verification/
+results/verification/*.txt

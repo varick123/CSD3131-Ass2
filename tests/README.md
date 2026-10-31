@@ -1,3 +1,3 @@
 # Tests
 
-Run CTest for `algorithms` and `command_line`. Python 3.10+ is needed for the latter; explicitly select its interpreter when configuring if needed. The algorithm suite uses independent exhaustive oracles; CLI tests independently decode output pixels and replay removals. Viewer tests follow in the next stage.
+Run CTest for `algorithms`, `command_line` and `viewer_http`. Python 3.10+ is required for the latter two. Core tests use independent exhaustive oracles. CLI tests independently decode pixels and replay resizing. Viewer tests launch an isolated loopback server against the real executable and check upload, resizing, frames, downloads and invalid requests.
