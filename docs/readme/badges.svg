@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="397" height="36" viewBox="0 0 397 36" role="img" aria-labelledby="title">
+  <title id="title">C++17 · CMake 3.20+ · Scaffold</title>
+  <rect x="1" y="1" width="102" height="34" rx="7" fill="#17253c" stroke="#52627d"/>
+  <circle cx="16" cy="18" r="3.5" fill="#ffd598"/>
+  <text x="29" y="23" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#f4f8ff">C++17</text>
+  <rect x="112" y="1" width="150" height="34" rx="7" fill="#17253c" stroke="#52627d"/>
+  <circle cx="127" cy="18" r="3.5" fill="#a5c7ff"/>
+  <text x="140" y="23" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#f4f8ff">CMake 3.20+</text>
+  <rect x="271" y="1" width="124" height="34" rx="7" fill="#17253c" stroke="#52627d"/>
+  <circle cx="286" cy="18" r="3.5" fill="#c1b2ff"/>
+  <text x="299" y="23" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#f4f8ff">Scaffold</text>
+</svg>
