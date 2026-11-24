@@ -1,0 +1,13 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "logical_cpus": 16,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "build": "Release; C++17; MSVC /O2 on this run",
+  "compiler_note": "Verify CMakeCache.txt/build compiler when reproducing on another machine.",
+  "algorithm_threads": 1,
+  "repetitions": 5,
+  "max_side": 96,
+  "energy": "integer grayscale; signed Sobel3x3 L1; replicated borders",
+  "timing": "steady_clock; sum energy/search/removal stages; one warmup; excludes disk I/O and visualization"
+}

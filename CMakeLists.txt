@@ -1,32 +1,32 @@
 cmake_minimum_required(VERSION 3.20)
-project(SeamCarvingStarter LANGUAGES CXX)
+project(SeamCarvingAssignment VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
-add_library(seam_core
-    src/energy.cpp
-    src/dp.cpp
-    src/greedy.cpp
-    src/graph_cut.cpp
-    src/resize.cpp
-    src/image_io.cpp
-)
-target_include_directories(seam_core PUBLIC include)
+add_library(seam_core src/core.cpp src/energy.cpp src/dp.cpp src/greedy.cpp src/flow.cpp src/graph_cut.cpp)
+target_include_directories(seam_core PUBLIC src)
+add_library(seam_app src/image_io.cpp src/resize.cpp)
+target_include_directories(seam_app PUBLIC src PRIVATE third_party)
+target_link_libraries(seam_app PUBLIC seam_core)
 add_executable(seamcarve src/main.cpp)
-target_link_libraries(seamcarve PRIVATE seam_core)
-foreach(target seam_core seamcarve)
-    if(MSVC)
-        target_compile_options(${target} PRIVATE /W4 /permissive- /utf-8)
-    else()
-        target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
-    endif()
+target_link_libraries(seamcarve PRIVATE seam_app)
+foreach(target seam_core seam_app seamcarve)
+  if(MSVC)
+    target_compile_options(${target} PRIVATE /W4 /permissive- /utf-8)
+  else()
+    target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
+  endif()
 endforeach()
-
 include(CTest)
 if(BUILD_TESTING)
-    # This only verifies that the starter executable launches. Add real
-    # algorithm tests as modules are implemented; a smoke pass is not correctness.
-    add_test(NAME starter_help COMMAND seamcarve --help)
-    add_test(NAME starter_status COMMAND seamcarve --status)
+  add_executable(seam_tests tests/test_algorithms.cpp)
+  target_link_libraries(seam_tests PRIVATE seam_core)
+  add_test(NAME algorithms COMMAND seam_tests)
+  find_package(Python3 3.10 COMPONENTS Interpreter QUIET)
+  if(Python3_Interpreter_FOUND)
+    add_test(NAME command_line COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/test_cli.py" "$<TARGET_FILE:seamcarve>")
+    add_test(NAME viewer_http COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/test_viewer.py" "$<TARGET_FILE:seamcarve>")
+  else()
+    message(STATUS "Python 3.10+ was not found: only core algorithm tests are registered; CLI and viewer tests are unavailable.")
+  endif()
 endif()

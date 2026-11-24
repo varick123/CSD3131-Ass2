@@ -1,24 +1,14 @@
-# Team work allocation
+# Team review and remaining work
 
-Choose owners together; do not assume one row equals one team member. Agree interface changes before merging. Everyone should review another module and understand the complete solution for the quiz.
+The existing local implementation is being integrated on this branch in tested stages. Assign review owners together; these commits do not establish any teammate's individual contribution or understanding.
 
-| Workstream | Owner | Implementation work | Evidence before merging |
-|---|---|---|---|
-| Image/energy | To assign | I/O adapter, normalization, energy, border/numeric policies | Hand-calculated energy and format tests |
-| Dynamic programming | To assign | State, table order, parents, reconstruction | Independent optimum tests and proof |
-| Greedy | To assign | Explicit local rule and tie handling | Legal seams, failure example and comparison |
-| Graph cut | To assign | Graph/capacities, max-flow, residual cut recovery | Flow/cut tests, boundaries and optimum agreement |
-| Resize/integration | To assign | Removal, transpose, repeated targets, CLI | Survivor-order tests, both axes and validation |
-| Evaluation/documentation | To assign | Dataset, timing harness, analysis, report and video | Reproducible evidence and reviewed explanations |
+| Area | Review owner | Checks |
+|---|---|---|
+| Energy and image handling | To assign | Channel conventions, borders, signed derivatives and validation |
+| DP and greedy | To assign | Recurrence, tie rules, traceback and greedy counterexample |
+| Graph cut | To assign | Capacities, residual flow, cut recovery and image boundaries |
+| Resize and interaction | To assign | Both axes, energy recomputation, dimensions and frame playback |
+| Evaluation and analysis | To assign | Reproduce comparisons, verify arguments and inspect visual quality |
+| Submission | To assign | Team identity, code/video links, presentation, peer evaluation and final review |
 
-Suggested merge sequence:
-
-1. Confirm the shared data contracts and choose an image library.
-2. Integrate image loading, energy and a one-seam DP path.
-3. Add removal and horizontal/repeated resizing.
-4. Integrate greedy and graph cut through the same pipeline.
-5. Run independent tests and fair comparisons; write the analysis alongside results.
-6. Add bonus visualization/interaction/automation if the required work is stable.
-7. Review the report, rehearse within the limits, record and check required links/uploads.
-
-Keep each change reviewable. A merge should state what was implemented, what was tested and any known limitations. Do not describe the starter's smoke tests as evidence that unfinished algorithms work.
+Use the assignment checklist in [ASSIGNMENT_REQUIREMENTS.md](ASSIGNMENT_REQUIREMENTS.md). Everyone should understand the complete solution for the project quiz.

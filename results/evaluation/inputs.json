@@ -1,0 +1,74 @@
+[
+  {
+    "input": "data\\demo\\scene_1.png",
+    "sha256": "55fae880242cce0d450c07bd29692ed70105cb95a79536224cc873dbc413b41f",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\demo\\scene_2.png",
+    "sha256": "0ff8210293f7325101cfc04432031d4d84780a129dc4424b650223e26a54674f",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\demo\\scene_3.png",
+    "sha256": "aa16150b0fcae90fd017ffd471933945b2c99a8c7412983da38155c1925b3428",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\demo\\scene_4.png",
+    "sha256": "257c993dfb0068e1f5f78ac51729fad2acb572214712ebf64403a5dece72435d",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\demo\\scene_5.png",
+    "sha256": "c9f4ab052a83d3a0cf8350cf33ebe218586eee578f05d647d56809505b8512bb",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\demo\\scene_6.png",
+    "sha256": "c9ae2ab88745fbf670156fb3ccf45336e234ced5037996c44f04b6c0063d0466",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\demo\\scene_7.png",
+    "sha256": "ecc062d5fd5ffe500ff83dc45b4af3952f237481588cadb5197200cdc7a78af3",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\demo\\scene_8.png",
+    "sha256": "a6762879eb1a1d0f1a81c9a2562daca25d91d6aec3d071d27ea812b9cf7e093d",
+    "prepared_width": 96,
+    "prepared_height": 67
+  },
+  {
+    "input": "data\\photos\\astronaut.png",
+    "sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "prepared_width": 96,
+    "prepared_height": 96
+  },
+  {
+    "input": "data\\photos\\chelsea.png",
+    "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+    "prepared_width": 96,
+    "prepared_height": 64
+  },
+  {
+    "input": "data\\photos\\coffee.png",
+    "sha256": "cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7",
+    "prepared_width": 96,
+    "prepared_height": 64
+  },
+  {
+    "input": "data\\photos\\rocket.jpg",
+    "sha256": "c2dd0de7c538df8d111e479619b129464d0269d0ae5fd18ca91d33a7fdfea95c",
+    "prepared_width": 96,
+    "prepared_height": 64
+  }
+]

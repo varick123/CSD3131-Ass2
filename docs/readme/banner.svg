@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="252" viewBox="0 0 960 252" role="img" aria-labelledby="title desc">
-  <title id="title">Seam Carving Starter</title>
-  <desc id="desc">A C++ scaffold for content-aware resizing</desc>
+  <title id="title">Seam Carving</title>
+  <desc id="desc">Content-aware image resizing in C++17</desc>
   <defs>
     <linearGradient id="panel" x2="1" y2="1" gradientUnits="objectBoundingBox">
       <stop stop-color="#17253c"/>
@@ -23,6 +23,6 @@
     <g fill="#ffd598" stroke="none"><circle cx="791" cy="63" r="4"/><circle cx="816" cy="88" r="4"/><circle cx="791" cy="113" r="4"/><circle cx="791" cy="138" r="4"/><circle cx="816" cy="163" r="4"/><circle cx="841" cy="188" r="4"/></g>
   </g>
   <text x="48" y="65" font-family="Consolas, monospace" font-size="19" font-weight="bold" letter-spacing="1.25" fill="#ffd598">CSD3131  /  COURSEWORK</text>
-  <text x="46" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="bold" fill="#f4f8ff">Seam Carving Starter</text>
-  <text x="48" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="27" fill="#c3d2e8">A C++ scaffold for content-aware resizing</text>
+  <text x="46" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="bold" fill="#f4f8ff">Seam Carving</text>
+  <text x="48" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="27" fill="#c3d2e8">Content-aware image resizing in C++17</text>
 </svg>
